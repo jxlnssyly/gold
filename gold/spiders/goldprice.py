@@ -9,7 +9,7 @@ class GoldpriceSpider(scrapy.Spider):
     start_urls = ['https://g-banker.com/']
 
     def __init__(self):
-        self.browser = webdriver.Chrome('/Applications/Google Chrome.app/Contents/MacOS/chromedriver')
+        self.browser = webdriver.PhantomJS(executable_path='/Users/user/Ly/Web/gold/phantomjs')
         self.price = None
 
     def parse(self, response):
