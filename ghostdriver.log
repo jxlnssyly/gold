@@ -14,4 +14,4 @@
   (anonymous function) (https://dn-growing.qbox.me/vds.js:2)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2017-07-12T13:42:47.729Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-12T13:43:21.141Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
