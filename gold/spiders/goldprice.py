@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import scrapy
 from selenium import webdriver
 import datetime
@@ -9,7 +10,7 @@ class GoldpriceSpider(scrapy.Spider):
     start_urls = ['https://g-banker.com/']
 
     def __init__(self):
-        self.browser = webdriver.PhantomJS(executable_path='/Users/user/Ly/Web/gold/phantomjs')
+        self.browser = webdriver.PhantomJS()
         self.price = None
 
     def parse(self, response):
