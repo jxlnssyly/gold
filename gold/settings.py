@@ -46,6 +46,12 @@ DEFAULT_REQUEST_HEADERS = {
 #   'Accept-Language': 'en',
 }
 
+EXTENSIONS = {
+    #官方说这个扩展类已经被弃用了
+    #'scrapy.contrib.statsmailer.StatsMailer': 500,
+    'scrapy.extensions.statsmailer.StatsMailer': 500,
+}
+
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
