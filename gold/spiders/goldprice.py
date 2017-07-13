@@ -23,7 +23,7 @@ class GoldpriceSpider(scrapy.Spider):
         hour = datetime.datetime.now().hour
         if(self.price != None):
             if int(hour) < 22:
-                if(self.price > 278):
+                if(self.price > 278 or self.price < 270):
                     from scrapy.mail import MailSender
                     # mailer = MailSender.from_settings(settings)# 出错了，没找到原因
                     mailer = MailSender(
